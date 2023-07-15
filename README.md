@@ -11,7 +11,7 @@ Contact:
 	Dam Safety Monitoring Directorate
 	4th Floor (S), Sewa R. K. Puram New Delhi – 110066
 
-_I do not own the data used in this repository. If you are the owner of the data and want this repository to be removed, please contact me via email (info@max-har.de)._
+_I do not own the data used in this repository. If you are the owner of the data and want this repository to be removed, please contact me via email (mail@max-har.de)._
 
 __Method__
 [Python 3.8]
