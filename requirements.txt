@@ -1,3 +1,3 @@
-camelot==13.04.13-gpl-pyqt
+camelot_py==0.9.0
 numpy==1.21.5
 pandas==1.5.2
