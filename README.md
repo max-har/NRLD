@@ -19,7 +19,6 @@ __Method__
 [Python 3.8]
 1. The file _extract-csv.py_ uses the Python library _Camelot_ to extract PDF tables (URL: https://camelot-py.readthedocs.io/en/master/) from the _National Register of Large Dams_ (June 2019) in the form of CSV files. It creates a raw CSV file for each Indian state in the folder _camelot/raw_.
 2. The file _clean-csv.py_ uses the Python library _Pandas_ to manipulate (misplaced) data and to correct data errors with the help of data frames. It creates a single CSV file (optional: a CSV file for each Indian state; uncomment line 24 in _clean-csv.py_) in the folder _camelot/clean_.
--
 
 __Problems__
 - _Camelot_ cannot extract PDF tables with a single row. This leads to missing data in the case of Haryana (HR), Mizoram (MZ), Nagaland (NL), Tripura (TR), and (the last page of) Chhattisgarh (CG)
@@ -29,6 +28,8 @@ __Problems__
 - The programme cannot automatically extract misplaced data from "Dam Length". This leads to data errors in two cases (see "PIC"s in _List 4_).
 - The programme cannot automatically extract misplaced data from "Purpose". This leads to data errors in one case (see "PIC"s in _List 5_).
 - The programme cannot deal with a typo in "PIC" _BR02HH0025_ (misspelled as _BR02HH025_).
+
+[It is best to look at the lists below in the source code of this file.]
 
 __Abbreviation__ (used in column "Purpose")
 I	Irrigation
