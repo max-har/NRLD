@@ -3,6 +3,7 @@
 [The uploaded CSV file _CWC\_National-Register-of-Large-Dams\_2019.csv_ is a manually revised version of the file produced by the script (the problems of the script are described below). If you find data errors in the file, please contact me via email (mail@max-har.de).]
 
 __Data__
+
 URL: http://cwc.gov.in/sites/default/files/nrld06042019.pdf
 
 Contact:
@@ -17,6 +18,7 @@ Contact:
 _I do not own the data used in this repository. If you are the owner of the data and want this repository to be removed, please contact me via email (mail@max-har.de)._
 
 __Method__
+
 [Python 3.8]
 1. The file _extract-csv.py_ uses the Python library _Camelot_ to extract PDF tables (URL: https://camelot-py.readthedocs.io/en/master/) from the _National Register of Large Dams_ (June 2019) in the form of CSV files. It creates a raw CSV file for each Indian state in the folder _camelot/raw_.
 2. The file _clean-csv.py_ uses the Python library _Pandas_ to manipulate (misplaced) data and to correct data errors with the help of data frames. It creates a single CSV file (optional: a CSV file for each Indian state; uncomment line 24 in _clean-csv.py_) in the folder _camelot/clean_.
@@ -30,69 +32,71 @@ __Problems__
 - The programme cannot automatically extract misplaced data from "Purpose". This leads to data errors in one case (see "PIC"s in _List 5_).
 - The programme cannot deal with a typo in "PIC" _BR02HH0025_ (misspelled as _BR02HH025_).
 
-[It is best to look at the lists below in the source code of this file.]
+__Abbreviations__ (used in column "Purpose")
 
-__Abbreviation__ (used in column "Purpose")
-I	Irrigation
-H	Hydropower
-S	Water Supply
-F	Fish Production
-C	Flood Control
-O	Other Benefits
-T	Tourism
-N	Navigation
-TE	Earth
-ER	Rock Fill
-PG	Gravity / Masonry
+- I	Irrigation
+- H	Hydropower
+- S 	Water Supply
+- F	Fish Production
+- C	Flood Control
+- O	Other Benefits
+- T	Tourism
+- N	Navigation
+- TE	Earth
+- ER	Rock Fill
+- PG	Gravity / Masonry
 
 __Units__
-m	Height above lowest foundation-meters
-m	Length of dam-meters
-m3	Volume content of dam-Cubic-meter
-m3	Gross Storage capacity-Cubic-meter
-m2	Reservoir Area	Square meter
-m3	Effective Storage capacity-Cubic-meter
-m3/s	Designed Spillway capacity-Cumecs
+
+- m	Height above lowest foundation-meters
+- m	Length of dam-meters
+- m3	Volume content of dam-Cubic-meter
+- m3	Gross Storage capacity-Cubic-meter
+- m2	Reservoir Area	Square meter
+- m3	Effective Storage capacity-Cubic-meter
+- m3/s	Designed Spillway capacity-Cumecs
 
 __Index__
-AN	57	Andaman and Nicobar Island
-AP	58-64	Andhra Pradesh
-AR	65	Arunanchal Pradesh
-AS	66	Assam
-BR	67	Bihar
---	68	Chandigarh [no large dams]
-CG	69-76	Chhattisgarh
---	77	Dadara and Nagar Havelli [no large dams]
---	78	Daman and Diu [no large dams]
-GA	79	Goa
-GJ	80-102	Gujarat
-HR	103	Haryana
-HP	104	Himachal Pradesh
-JK	105	Jammu and Kashmir
-JH	106-108	Jharkhand
-KA	109-120	Karnataka
-KL	121-123	Kerala
---	124	Lakshadweep [no large dams]
-MP	125-149	Madhya Pradesh
-MH	150-242	Maharashtra
-MN	243	Manipur
-ML	244	Meghalaya
-MZ	245	Mizoram
-NL	246	Nagaland
---	247	Delhi [no large dams]
-OR	248-256	Odisha
---	257	Puducherry [no large dams]
-PB	258	Punjab
-RA	259-264	Rajasthan
-SK	265	Sikkim
-TN	266-273	Tamil Nadu
-TR	274	Tripura
-UP	275-278	Uttar Pradesh
-UA	279	Uttarakhand
-WB	280	West Bengal
-TL	281-286	Telangana
+
+- AN	57	Andaman and Nicobar Island
+- AP	58-64	Andhra Pradesh
+- AR	65	Arunanchal Pradesh
+- AS	66	Assam
+- BR	67	Bihar
+- --	68	Chandigarh [no large dams]
+- CG	69-76	Chhattisgarh
+- --	77	Dadara and Nagar Havelli [no large dams]
+- --	78	Daman and Diu [no large dams]
+- GA	79	Goa
+- GJ	80-102	Gujarat
+- HR	103	Haryana
+- HP	104	Himachal Pradesh
+- JK	105	Jammu and Kashmir
+- JH	106-108	Jharkhand
+- KA	109-120	Karnataka
+- KL	121-123	Kerala
+- --	124	Lakshadweep [no large dams]
+- MP	125-149	Madhya Pradesh
+- MH	150-242	Maharashtra
+- MN	243	Manipur
+- ML	244	Meghalaya
+- MZ	245	Mizoram
+- NL	246	Nagaland
+- --	247	Delhi [no large dams]
+- OR	248-256	Odisha
+- --	257	Puducherry [no large dams]
+- PB	258	Punjab
+- RA	259-264	Rajasthan
+-SK	265	Sikkim
+- TN	266-273	Tamil Nadu
+- TR	274	Tripura
+- UP	275-278	Uttar Pradesh
+- UA	279	Uttarakhand
+- WB	280	West Bengal
+- TL	281-286	Telangana
 
 __List 1__
+
 UP13MH0046
 UP13MH0040
 UP13LH0025
@@ -166,6 +170,7 @@ KA06MH0150
 GA18MH0003
 
 __List 2__
+
 AS30HH0005
 MP08MH0399
 ML22HH0002
@@ -174,12 +179,15 @@ SK30HH0002
 
 
 __List 3__
+
 MP39HH0676
 MP08HH0326
 
 __List 4__
+
 KA06HH0107
 KL29VH0027
 
 __List 5__
+
 TN12HH0014
